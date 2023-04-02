@@ -5,7 +5,8 @@ subtitle: Why and how I set up a personal blog using GitHub Pages, Jekyll, and G
 gh-repo: kenibrewer/www.kenbrewer.com
 gh-badge: [follow]
 cover-img: ['assets/img/coffee_and_coding.jpg']
-tags: [devops,biotech,bioinformatics,github,github-pages,jekyll,ci/cd,github-actions]
+tags: [devops,biotech,github,github-pages,jekyll,ci/cd,github-actions]
+readtime: true
 comments: true
 ---
 
@@ -25,6 +26,12 @@ That led to my decision to set up a blog focused on applying the principles of D
 ## Criteria for the blog
 
 If I wanted to write a blog that would in part be focused on DevOps, I wanted to set up the website using that same set of principles I wanted to write about.
+The DevOps principles I wanted to apply to the blog were:
+
+* Automate everything
+* Use version control
+* Use a CI/CD pipeline to deploy the site
+
 I also had a few other criteria for the blog:
 
 * Use a static site generator to make the blog easy to maintain.
@@ -157,7 +164,7 @@ I'm looking forward to writing more posts in the future, and I hope you'll join 
 * [Github Actions](
 https://docs.github.com/en/actions)
 
-### Image credits
+#### Image credits
 
 Cover image credit by [Nathan da Silva](https://unsplash.com/@silvawebdesigns) on [Unsplash]("https://unsplash.com/photos/k-rKfqSm4L4)
   
