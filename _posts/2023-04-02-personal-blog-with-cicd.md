@@ -4,6 +4,7 @@ title: Setting up a personal blog with CI/CD
 subtitle: Why and how I set up a personal blog using GitHub Pages, Jekyll, and GitHub Actions
 gh-repo: kenibrewer/www.kenbrewer.com
 gh-badge: [follow]
+cover-img: ['assets/img/coffee_and_coding.jpg']
 tags: [devops,biotech,bioinformatics,github,github-pages,jekyll,ci/cd,github-actions]
 comments: true
 ---
@@ -147,3 +148,16 @@ I could have waited until I had the Terraform setup ready to go too, but getting
 I'm really happy with how with how simple it was to set up this blog using DevOps principles.
 It only took a few hours to set up the blog, and I have something simple and robust enough for me to write posts and iterate on with little-to-not overhead.
 I'm looking forward to writing more posts in the future, and I hope you'll join me on this journey!
+
+## References
+
+* [Beautiful Jekyll](https://beautifuljekyll.com/)
+* [Jekyll](https://jekyllrb.com/)
+* [Github Pages](https://pages.github.com/)
+* [Github Actions](
+https://docs.github.com/en/actions)
+
+### Image credits
+
+Cover image credit by [Nathan da Silva](https://unsplash.com/@silvawebdesigns) on [Unsplash]("https://unsplash.com/photos/k-rKfqSm4L4)
+  
