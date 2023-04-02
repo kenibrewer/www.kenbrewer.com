@@ -74,7 +74,76 @@ You can read more about how to set up a Github Codespace in the [Github document
 ## Setting up a CI/CD pipeline
 
 The original repo for Beautiful Jekyll included a simple [GitHub Actions workflow](https://github.com/daattali/beautiful-jekyll/blob/e1facea35a0a8ee81bc204db10039d5b53837a39/.github/workflows/ci.yml).
+While enabling the Github Pages feature in the repo settings, I found a template Github Actions pipeline that can be used to build and deploy the site instead:
 
+```yaml
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll site to Pages
 
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
+        with:
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v1
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+```
+
+## Setting up a custom domain
+
+I wanted to use a custom domain name for the blog, so I followed the instructions on the [Github Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) to set up a custom domain.
+In order to use a custom domain, you need to create a CNAME record in your DNS settings that points to `<username>.github.io`.
+I did this manually in the console for Cloudflare, but I plan to integrate these settings into a Terraform configuration file that I'll build into this repo in the future.
+I could have waited until I had the Terraform setup ready to go too, but getting a minimum viable product up and running quickly is a key part of the DevOps philosophy.
+
+## Conclusion
+
+I'm really happy with how with how simple it was to set up this blog using DevOps principles.
+It only took a few hours to set up the blog, and I have something simple and robust enough for me to write posts and iterate on with little-to-not overhead.
+I'm looking forward to writing more posts in the future, and I hope you'll join me on this journey!
