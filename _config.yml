@@ -20,8 +20,8 @@ author: Ken Brewer
 ###############################################
 
 navbar-links:
+  Home: ""
   About Me: "aboutme"
-  Blog: "index.html"
 
 ################
 # --- Logo --- #
