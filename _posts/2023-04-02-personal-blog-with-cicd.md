@@ -10,8 +10,8 @@ readtime: true
 comments: true
 ---
 
-Based on the recommendation of *multiple* colleagues in the Flagship Pioneering informatics community, I recently listed to [The Phoenix Project](https://itrevolution.com/product/the-phoenix-project/) on audiobook. 
-This fictional novel focuses on a struggling IT department within a company, and how the main character, Bill, turns things around by implementing principles that are now core to the DevOps movement.
+Based on the recommendation of *multiple* colleagues in the Flagship Pioneering informatics community, I recently listened to [The Phoenix Project](https://itrevolution.com/product/the-phoenix-project/) on audiobook. 
+This novel focuses on a struggling IT department within the fictional company Parts Unlimited, and how the main character, Bill, turns things around by implementing the core principles of the DevOps movement.
 It is an engaging and educational read, and I highly recommend it to anyone interested in DevOps.
 
 
@@ -20,7 +20,8 @@ His frantic efforts to ensure integrity of critical data for his colleagues in H
 
 
 The novel inspired me to consider how I could apply DevOps principles to the specific problems I face at work. 
-I was somewhat surprised, when I realized that I already had most of the necessary technical skills, but lacked a framework to apply them in an integrated way.
+As I started diving deeper into DevOps, I was somewhat surprised to discover that I already possessed all the core technical skills. 
+I had simply lacked a framework to apply those technical skills in an integrated, synergistic way.
 That led to my decision to set up a blog focused on applying the principles of DevOps to specific problems faced by computational biologists, bioinformaticians, machine learning engineers and data scientists who work in the biotech and pharmaceutical industries.
 
 ## Criteria for the blog
@@ -166,5 +167,5 @@ https://docs.github.com/en/actions)
 
 #### Image credits
 
-Cover image credit by [Nathan da Silva](https://unsplash.com/@silvawebdesigns) on [Unsplash]("https://unsplash.com/photos/k-rKfqSm4L4)
+Cover image credit by [Nathan da Silva](https://unsplash.com/@silvawebdesigns) on [Unsplash](https://unsplash.com/photos/k-rKfqSm4L4)
   
