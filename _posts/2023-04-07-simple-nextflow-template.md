@@ -10,9 +10,9 @@ readtime: true
 comments: true
 ---
 
-Nextflow is the the go-to tools for many people in the bioinformatics community who are working on developing data pipelines. 
+Nextflow is the the go-to tool for many people in the bioinformatics community who are working on developing data pipelines. 
 Unfortunately, there is a pretty steep learning curve as there is a whole new Groovy-based syntax and framework for code organization to learn. 
-The steepest part of this learning curve in my experience happened when I tried to move from the simple pipeline examples present in the main Nextflow documentation, to the fully-featured, best-practice templates used by the open-source nf-core community.
+The steepest part of this learning curve in my experience happened when I tried to move from a simple pipeline structure like those present in the main Nextflow documentation, to the fully-featured, best-practice templates used by the open-source nf-core community.
 To address this steep learning curve I've created a new, slimmed down Nextflow [project template](github.com/kenibrewer/simplenextflow) based off nf-core's main template. 
 I hope it can be a stepping stone for intermediate Nextflow developers looking to learn best practices for pipeline development and for experienced Nextflow developers looking for a leaner codebase that can start generating outputs quicker than using the full template.
 
