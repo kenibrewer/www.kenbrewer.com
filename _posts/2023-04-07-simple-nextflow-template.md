@@ -5,6 +5,7 @@ subtitle: Getting to outputs quicker with lower configuration overhead
 gh-repo: kenibrewer/simplenextflow
 gh-badge: [star, fork, follow]
 tags: [nextflow, nf-core, templates, pipelines, devops]
+share-img: /assets/img/2023-04-07/nf-core-rnaseq_metro_map_grey.png
 readtime: true
 comments: true
 ---
