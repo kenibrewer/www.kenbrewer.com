@@ -29,7 +29,7 @@ Some of these pipelines are very complex, so much so that they are visualized wi
 
 [![nf-core-rnaseq_metro_map_grey](/assets/img/2023-04-07/nf-core-rnaseq_metro_map_grey.png)](/assets/img/2023-04-07/nf-core-rnaseq_metro_map_grey.png)
 
-To manage these complex pipelines, nf-core has also developed a powerful python package called [nf-core/tools](https://nf-co.re/tools) that provides a set of command-line tools for creating, testing, linting, and pipelines that adhere to nf-core standards.
+To manage these complex pipelines, nf-core has also developed a powerful python package called [nf-core/tools](https://nf-co.re/tools) that provides a set of command-line tools for creating, linting, testing, and syncing pipelines that adhere to nf-core standards.
 
 ## Challenges of working with the default nf-core template
 
