@@ -1,4 +1,4 @@
-[![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
+> This deployment of my personal website has been deprecated. You read about my reasons for switching to a CMS platform [here](https://kenbrewer.com/frictionless-development-using-platforms).
 
 # Beautiful Jekyll
 
